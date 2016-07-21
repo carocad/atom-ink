@@ -28,6 +28,9 @@ getConsole = (el) -> closest(el, 'ink-console').getModel()
 # - console.result(HTMLElement, {error: true|false}) displays the HTML element according to the error flag
 #    on error: red text with an `x` on the gutter
 #    on normal-result:  default text color with  a `✓` on the gutter
+# - console.getInput() to retrieve the last input cell object!
+# - console.getInput().editor.getText() to get the last input cell text
+# - console.input() to create a new input cell
 
 module.exports =
 class Console
